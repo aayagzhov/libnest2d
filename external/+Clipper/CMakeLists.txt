@@ -1,3 +1,3 @@
 rp_add_cmake_project(Clipper
-    GIT_REPOSITORY      https://github.com/tamasmeszaros/libpolyclipping.git
+    GIT_REPOSITORY      https://git.miem.hse.ru/2131/Clipper.git
 )
