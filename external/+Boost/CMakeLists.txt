@@ -134,12 +134,20 @@ endif ()
 
 ExternalProject_Add(
     rp_Boost
+
     URL "https://archives.boost.io/release/1.78.0/source/boost_1_78_0.tar.gz"
+
     URL_HASH SHA256=94ced8b72956591c4775ae2207a9763d3600b30d9d7446562c552f0a14a63be7
+
     DOWNLOAD_EXTRACT_TIMESTAMP ON
+
     CONFIGURE_COMMAND "${_bootstrap_cmd}"
+
     PATCH_COMMAND ${_patch_command}  # ← ВСЁ ПАТЧИ ОСТАЛИСЬ!
+
     BUILD_COMMAND "${_build_cmd}"
+
     BUILD_IN_SOURCE    ON
+
     INSTALL_COMMAND "${_install_cmd}"
 )
